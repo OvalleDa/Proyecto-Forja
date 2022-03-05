@@ -11,6 +11,8 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -19,56 +21,93 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-header{
-    height: 80px;
-    display: flex;
-    float: right;
+.sidebar{
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: var(---bluedark-color)
 }
 
-.box-usu{
-    display: flex;
-    justify-content: flex-end;
-    float: right;
+.sidebar img{
+    width: 80%;
+    margin-top: 70px;
+    margin-left: 25px;
 }
 
-.botonprin{
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: var(---gray-color);
-    border-radius: 10px;
+.sidebar ul{
+    margin-top: 100px;
     text-align: center;
-    border: 2px solid black;
-}
-
-.icono{
-    max-width: 40px;
-    margin-right: 10px;
-}
-
-nav{
-    display: flex;
-    float: left;
-    background-color: var(---bluedark-color);
-    height: 600px;
-    margin-top: -20px;
+    display: block;
+    height: 100%;
+    height: 100%;
+    line-height: 65px;
     
 }
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 
+.sidebar button{
+    margin-top: 15px;
+    background-color: var(---gray-color);
+    border: 2px solid var(---orange-color);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    color: var(---bluedark-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.boton-usuario{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boton-usuario button{
+    padding: 20px;
+    margin-right: 20px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.boton-usuario img{
+    max-width: 30px;
 }
 
 .contenido{
+    width: 110%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 28%;
-    background-color: #f3610e;
+
+}
+
+.contenido h1{
+    color: var(---orange-color);
+    font-size: 40px;
+}
+.input{
+    width: 110%;
+    display: flex;
+    justify-content: center;
+}
+
+.input input{
+    background-color:var(---gray-color);
+    border: none;
+    border-bottom: 2px solid var(---bluedark-color);
+    margin-top: 40px;
+    width: 300px;
+    text-align: center;
+}
+
+.guerreros{
+    max-width: 300px;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.guerreros img{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
 }
