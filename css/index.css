@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 :root{
-    --red-color:#A40101;
-    --blue-color:#2CA3AB;
-    --gray-color:#C4C4C4;
-    --orange-color:#F3610E;
-    --dark-blue-color:#1D1B45;
-    --white-color:#FFFFFF;
-    --black-color:#191919;
+    ---whitecolor: #fff;
+    --winecolor: #a40101;
+    --graycolor: #c4c4c4;
+    --bluecolor:#2ca3ab;
+    --bluedark: #1d1b45;
+    --bluesky: #A8DDE0;
+    --orangecolor: #f3610e;
+    --black: #000;
+    --graydark: #4444;
+
 }
 
 *{
@@ -33,12 +36,12 @@ header{
 }
 
 .contacto i{
-    color:var(--white-color);
+    color:var(---whitecolor);
     margin-right: 30px;
-    background-color: var(--orange-color);
+    background-color: var(--orangecolor);
     border-radius: 50%;
     padding: 5px;
-    box-shadow: 0 2px 3px var(--black-color);
+    box-shadow: 0 2px 3px var(--black);
     cursor: pointer;
 }
 
@@ -48,8 +51,8 @@ header{
 }
 
 .b-login{
-    background-color: var(--dark-blue-color);
-    color: var(--white-color);
+    background-color: var(--bluedark);
+    color: var(---whitecolor);
     border-radius: 10px;
     padding: 5px;
     font-size: 16px;
@@ -63,7 +66,7 @@ header{
 .b-login:hover, .bton-ingresar:hover{
     background-color: #2f2c6d;
     transform: translateY(-0.5px);
-    box-shadow: 0px 2px 3px var(--black-color);
+    box-shadow: 0px 2px 3px var(--black);
     cursor: pointer;
 }
 
@@ -96,7 +99,7 @@ header{
 
 .cont-2 i{
     font-size: 50px;
-    color: var(--orange-color);  
+    color: var(--orangecolor);  
 }
 
 .jeringa{  
@@ -128,7 +131,7 @@ header{
 }
 
 .con-banner h2{
-    color: var(--orange-color);
+    color: var(--orangecolor);
     font-size: 40px;
     margin: 0;
 }
@@ -147,7 +150,7 @@ header{
     margin: 10px;
 }
 .signos li i{
-    color: var(--red-color);
+    color: var(--winecolor);
     font-size: 20px;
 }
 
@@ -203,7 +206,7 @@ header{
 
 .covid-info p{
     background-color: var(--dark-blue-color);
-    color: white;
+    color: var(---whitecolor);
     padding: 10px 5px;
     margin:0 0 10px;
     cursor: pointer;
@@ -212,8 +215,8 @@ header{
 
 
 footer{
-    background-color: var(--black-color);
-    color: var(--white-color);
+    background-color: var(--black);
+    color: var(---whitecolor);
     padding: 3px 0 40px;
     text-align:center;
     font-size: 11px;

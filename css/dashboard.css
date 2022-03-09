@@ -11,25 +11,19 @@
     --black: #000;
     --graydark: #4444;
 }
+
 body{
     font-family: 'Poppins', sans-serif;
-}
-/* black, dark color #191919  white color
-darkcolor #444444 ligthblue #a8dde0 blueindex #0e5883*/
-
-#dashboard {
     height: 100%;
     width: 100%;
     margin: 0;
 }
 
-/*lado izquierdo*/
-#menu {
+
+
+#sidebar {
     float: left;
-
-
     width: 20%;
-    /*border: 1px solid #2CA3AB;*/
     background-color:var(--bluedark);
 
 
@@ -39,18 +33,18 @@ darkcolor #444444 ligthblue #a8dde0 blueindex #0e5883*/
 
 }
 
-.logo-menu-db {
+.logo-side {
     text-align: center;
     position: relative;
     top: 16%;
 }
 
-.logo-menu-db img {
+.logo-side img {
     max-width: 200px;
 
 }
 
-.container-buttons-db {
+.buttons-side {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -65,14 +59,14 @@ darkcolor #444444 ligthblue #a8dde0 blueindex #0e5883*/
     top: 40%;
 }
 
-.buttons--db {
+.buttons-s {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 
 }
 
-.buttons--db a {
+.buttons-s a {
     background-color: var(--graycolor);
     border: var(--orangecolor) solid 4px;
     border-radius: 9px;
@@ -85,29 +79,24 @@ darkcolor #444444 ligthblue #a8dde0 blueindex #0e5883*/
 
 }
 
-/*lado derecho*/
-#bienvenidos {
+#contenido {
     position: absolute;
     right: 0px;
     float: right;
     width: 80%;
     height: 100%;
-
-
-
     background-image: linear-gradient(rgba(255, 255, 255, 0.658), rgba(255, 255, 255, 0.658)), url(../img/13.\ guerreros.png);
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: 95%;
 }
 
-/*usuario*/
-.container-button-user-db {
+.button-cont {
     display: flex;
     justify-content: end;
 }
 
-.button-user-db {
+.button-user {
     display: flex;
     align-items: center;
     max-width: 33%;
@@ -117,7 +106,7 @@ darkcolor #444444 ligthblue #a8dde0 blueindex #0e5883*/
     margin: 5px 6px 0px 0px;
 }
 
-.button-user-db a {
+.button-user a {
     border-radius: 200px;
     padding: 15px;
     display: flex;
@@ -130,7 +119,7 @@ darkcolor #444444 ligthblue #a8dde0 blueindex #0e5883*/
     margin: 10px 10px 10px 10px;
 }
 
-.button-user-db h4 {
+.button-user h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
     margin: 0px 15px 0px 0px;
@@ -140,7 +129,7 @@ darkcolor #444444 ligthblue #a8dde0 blueindex #0e5883*/
 }
 
 /*titulo Bienvenidos*/
-.text-bienve-db h1 {
+.welcome h1 {
     color: var(--orangecolor);
     text-align: center;
     font-family: 'Poppins',sans-serif;
@@ -148,8 +137,8 @@ darkcolor #444444 ligthblue #a8dde0 blueindex #0e5883*/
     margin: 50px 0px 70px 0px;
 }
 
-/*Digite documento*/
-.container-digite {
+
+.search {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,7 +166,7 @@ darkcolor #444444 ligthblue #a8dde0 blueindex #0e5883*/
     font-family: 'Poppins',sans-serif;
 }
 
-.botones-db a {
+.buttons-input a {
     color: var(---whitecolor);
     background-color: var(--bluedark);
     border: var(--bluecolor) 3px solid;
@@ -186,19 +175,13 @@ darkcolor #444444 ligthblue #a8dde0 blueindex #0e5883*/
     margin-right: 4px;
 }
 
-/*Barra forja*/
-.footer-db {
+.footer {
     position: fixed;
     bottom: 0;
     height: 50px;
     width: 100%;
 }
 
-
-
-
-
-/*css for Dashboard-user.html*/
 
 #dashboard-user{
     background-image: url(../img/dashboard.png);
