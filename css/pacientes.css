@@ -26,7 +26,8 @@ body{
 }
   
 #btnform{
-    display: flex;
+    display: flex; 
+
 }
   
 .btnformuno{
@@ -37,10 +38,12 @@ body{
     font-size:30px;
     border: 2px solid var(--blue-color);
     color: var(--dark-color);
+}
+
+.btnform i{
     cursor: pointer;
-  
-  }
-  
+}
+
 .fotohead img{
     width: 100%;
     border-bottom: 6px solid var(--blue-color);
