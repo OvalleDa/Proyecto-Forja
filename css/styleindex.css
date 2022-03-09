@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
 :root{
     --red-color:#A40101;
     --blue-color:#2CA3AB;
@@ -25,29 +25,27 @@ header{
     padding: 0 40px 0 80px;
 }
 
-.contacto{
+.info-contact{
     display: flex;
     max-width: 300px;
     align-items: flex-start;
     margin-right: 10px;
 }
 
-.contacto i{
+.info-contact i{
     color:var(--white-color);
     margin-right: 30px;
     background-color: var(--orange-color);
     border-radius: 50%;
     padding: 5px;
     box-shadow: 0 2px 3px var(--black-color);
-    cursor: pointer;
 }
 
-.info p{
+.info-p p{
     margin:0 0 4px;
-    cursor: pointer;
 }
 
-.b-login{
+.bton-login{
     background-color: var(--dark-blue-color);
     color: var(--white-color);
     border-radius: 10px;
@@ -56,52 +54,51 @@ header{
     font-weight: bold;
 }
 
-.b-login i{
+.bton-login i{
     margin-left: 5px;
 }
 
-.b-login:hover, .bton-ingresar:hover{
+.bton-login:hover, .bton-ingresar:hover{
     background-color: #2f2c6d;
     transform: translateY(-0.5px);
     box-shadow: 0px 2px 3px var(--black-color);
     cursor: pointer;
 }
 
-.cont-1{
+.h-pte1{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
-    padding-top: 15px;
+    padding-top: 20px;
 }
 
-.cont-info{
+.inf-pte1{
     display: flex;
     justify-content: space-between;
     width: 500px;
     margin-right: 20%;
 }
 
-.img{
+.imgenes{
     display: flex;
     width: 27%;
     justify-content: space-between;
 }
 
-.cont-2{
+.h-pte2{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.cont-2 i{
+.h-pte2 i{
     font-size: 50px;
     color: var(--orange-color);  
 }
 
-.jeringa{  
+.syrin{  
     margin-top: 0;
-    cursor: pointer;
 }
 
 #banner{
@@ -110,14 +107,14 @@ header{
     justify-content: center;
 }
 
-.c-banner{
+.bg-banner{
     background-image: url(../img/2.\ medico.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 540px;
 }
 
-.con-banner{
+.conten-banner{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,38 +124,37 @@ header{
     text-align: center;
 }
 
-.con-banner h2{
+.conten-banner h2{
     color: var(--orange-color);
     font-size: 40px;
     margin: 0;
 }
 
-.con-banner h1{
+.conten-banner h1{
     font-size: 60px;
     margin: 0;
 }
 
 .franja img{
     width: 100%;
-    margin-left: 30px;
 }
 
-.signos li{
+.fa-ul li{
     margin: 10px;
 }
-.signos li i{
+.fa-ul li i{
     color: var(--red-color);
     font-size: 20px;
 }
 
-.bg-covid{
+.bg-cov{
     background-image: url(../img/4.\ covid.svg);
     display: flex;
     padding: 0 60px;
     justify-content: space-around;
 }
 
-.title-q{
+.title-cov{
     display: flex;
     align-items: center;
 }
@@ -168,7 +164,7 @@ header{
     margin-right: 10px;
 }
 
-.info-q img{
+.que-hacer img{
     width: 35px;
     margin-right: 5px;
 }
@@ -189,7 +185,7 @@ header{
     font-size: 120%;
 }
 
-.info-q{
+.que-hacer{
     width: 500px;
     margin: 20px;
     padding: 20px;
@@ -197,19 +193,20 @@ header{
     font-size: 120%;
 }
 
-.covid-info{
+.sec-covicho{
     background-color: #191919bd;
 }
 
-.covid-info p{
+.sec-covicho p{
     background-color: var(--dark-blue-color);
     color: white;
     padding: 10px 5px;
     margin:0 0 10px;
-    cursor: pointer;
 }
 
-
+.sec-covicho p:hover{
+    background-color: #2f2c6d;
+}
 
 footer{
     background-color: var(--black-color);
@@ -218,3 +215,4 @@ footer{
     text-align:center;
     font-size: 11px;
 }
+

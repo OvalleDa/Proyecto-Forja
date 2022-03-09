@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    ---whitecolor: #fff;
+    --winecolor: #a40101;
+    --graycolor: #c4c4c4;
+    --bluecolor:#2ca3ab;
+    --bluedark: #1d1b45;
+    --bluesky: #A8DDE0;
+    --orangecolor: #f3610e;
+    --black: #000;
+    --graydark: #4444;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* black, dark color #191919  white color
+darkcolor #444444 ligthblue #a8dde0 blueindex #0e5883*/
+
+#dashboard {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+/*lado izquierdo*/
+#menu {
+    float: left;
+
+
+    width: 20%;
+    /*border: 1px solid #2CA3AB;*/
+    background-color:var(--bluedark);
+
+
+    height: 100%;
+    position: absolute;
+
+
+}
+
+.logo-menu-db {
+    text-align: center;
+    position: relative;
+    top: 16%;
+}
+
+.logo-menu-db img {
+    max-width: 200px;
+
+}
+
+.container-buttons-db {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    height: 100px;
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+
+.buttons--db {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+}
+
+.buttons--db a {
+    background-color: var(--graycolor);
+    border: var(--orangecolor) solid 4px;
+    border-radius: 9px;
+    color: var(--black);
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+}
+
+/*lado derecho*/
+#bienvenidos {
+    position: absolute;
+    right: 0px;
+    float: right;
+    width: 80%;
+    height: 100%;
+
+
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.658), rgba(255, 255, 255, 0.658)), url(../img/13.\ guerreros.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: 95%;
+}
+
+/*usuario*/
+.container-button-user-db {
+    display: flex;
+    justify-content: end;
+}
+
+.button-user-db {
+    display: flex;
+    align-items: center;
+    max-width: 33%;
+    min-width: 33px;
+    background-color: var(--graycolor);
+    border-radius: 19px;
+    margin: 5px 6px 0px 0px;
+}
+
+.button-user-db a {
+    border-radius: 200px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--graydark);
+    border: 5px solid var(--orangecolor);
+    background-color: var(---whitecolor);
+    cursor: hand;
+    margin: 10px 10px 10px 10px;
+}
+
+.button-user-db h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    margin: 0px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*titulo Bienvenidos*/
+.text-bienve-db h1 {
+    color: var(--orangecolor);
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    margin: 50px 0px 70px 0px;
+}
+
+/*Digite documento*/
+.container-digite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6px;
+
+    margin-bottom: 20px;
+    /*border: #df6704 solid 10px;*/
+}
+
+.digite-input {
+    width: 300px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    border: 0;
+    border-bottom: 2px solid var(--bluedark);
+}
+
+::placeholder {
+    font-family: 'Poppins',sans-serif;
+}
+
+.botones-db a {
+    color: var(---whitecolor);
+    background-color: var(--bluedark);
+    border: var(--bluecolor) 3px solid;
+    padding: 4px 10px 4px 10px;
+    border-radius: 9px;
+    margin-right: 4px;
+}
+
+/*Barra forja*/
+.footer-db {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+
+
+
+
+
+/*css for Dashboard-user.html*/
+
+#dashboard-user{
+    background-image: url(../img/dashboard.png);
+    background-size: cover;
+    
+}
+
+.dashuser-container{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+
+    position: absolute;
+    left: 25%;
+    top: 25%;
+
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    
+}
+
+.dashuser-logo{
+    background-color: var(--white-color);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+}
+
+.dashuser-text {
+    background-color: var(--white-color);
+    text-align: center;
+    width: 100%;
+    height: 35%;
+}
+
+.dashuser-text h2{
+    font-weight: 400;
+}
+
+.dashuser-buttons{
+    display: flex;
+    background-color: var(--white-color);
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    border-radius:  0 0 10px 10px;
+}
+
+.button-dashuser1{
+    background-color: var(--DarkOrange-color);
+    padding: 5px 20px 5px 20px;
+    color: var(--white-color);
+    border: var(--blue-color) 2px solid;
+    border-radius: 7px;
+    text-decoration: none;
+    margin-bottom: 25px;
+    margin: 0 5px 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-dashuser2{
+    background-color: var(--blueindexbutttoms-color);
+    padding: 5px 20px 5px 20px;
+    color: var(--white-color);
+    border: var(--blue-color) 2px solid;
+    border-radius: 7px;
+    text-decoration: none;
+    margin-bottom: 25px;
+    margin: 0 0 25px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.capa{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000065;
+}

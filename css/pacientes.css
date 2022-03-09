@@ -1,4 +1,19 @@
-/*Estilo formpacientes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+:root{
+  --red-color:#A40101;
+  --blue-color:#2CA3AB;
+  --grey-color:#C4C4C4;
+  --orange-color:#F3610E;
+  --darkblue-color:#1D1B45;
+  --lightblue-color:#a8dde0;
+  --dark-color:#191919;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 .encabezado{
     background-color: var(--dark-color);
     display: flex;
@@ -22,6 +37,7 @@
     font-size:30px;
     border: 2px solid var(--blue-color);
     color: var(--dark-color);
+    cursor: pointer;
   
   }
   
@@ -77,17 +93,17 @@
 } 
 
 .bar1 {
-      font-size: 16px;
-      font-weight: 100;
-      padding: 0 590px;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 0 590px;
 }
-  
+
 .bar2 {
     font-size: 16px;
     font-weight: 100;
     padding: 0 550px;
 }
-  
+
 .bar3 {
     font-size: 16px;
     font-weight: 100;
@@ -102,14 +118,14 @@
     padding: 0 10px;
     color: gray;
 }
-  
+
 .datosp{
     width: 100%;
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
 }
-  
+
 .datosp input{
     width: 686px;
     height: 30px;
@@ -118,7 +134,7 @@
     padding: 0 10px;
     color: gray;
 }
-  
+
 .datosp select{
     width: 708px;
     height: 30px;
@@ -127,14 +143,14 @@
     color: gray;
     padding: 0 8px;
 }
-  
+
 .datosp{
     width: 100%;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
 }
-  
+
 .pr input{
     width: 25%;
     height: 30px;
@@ -143,23 +159,23 @@
     padding: 0 10px;
     color: gray;
 }
-  
+
 .pr select{
     width:33%;
     height: 30px;
     border: 1px solid var(--blue2-color);
     margin: 10px 15px 10px 20px;
     color: gray;
-  }
-  
+}
+
 .radio{
     font-size: 16px;
     color: gray;
     display: flex;
     flex-direction: column;
     margin: 0 20px;  
-  }
-  
+}
+
 .opradio{
     width: 10%;
     display:flex ;
@@ -167,20 +183,22 @@
     justify-content: space-around;
     margin:auto ;
     padding: 10px;
-  }
-  
+}
+
+
 #borform button{
     margin: 10px auto 60px ;
-    background-color: var(--darkorange-color);
+    background-color: var(--orange-color);
     width: 8%;
-    color: var(--white-color);
+    color: white;
     border: none;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 30px;
+    padding: 10px;
     font-size: 14px;
     font-weight: 100;
-  }
-  
+    cursor: pointer;
+}
+
 #ftform{
     display: flex;
     width: 100%;
@@ -192,4 +210,3 @@
     font-size: 14px;
     font-weight: 100;
 }
-  

@@ -1,8 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+
+:root{
+    ---whitecolor: #fff;
+    --winecolor: #a40101;
+    --graycolor: #c4c4c4;
+    --bluecolor:#2ca3ab;
+    --bluedark: #1d1b45;
+    --bluesky: #A8DDE0;
+    --orangecolor: #f3610e;
+    --black: #000;
+    --graydark: #4444;
+
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background-image: url(../img/10.png);
+
 }
 
 main{
@@ -25,6 +40,7 @@ label{
 
 }
 
+
 input{
     width: 70%;
     background-color: #E9F6F7;
@@ -36,13 +52,13 @@ input{
 }
 
 .container{
-    background-color: white;
+    background-color: var(---whitecolor);
     border-radius: 15px;
 }
 
 .logo{
     text-align: center;
-    background-color: #A8DDE0;
+    background-color: var(--bluesky);
     padding: 40px 30px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -53,10 +69,10 @@ input{
     position: relative;
     top: -10px;
     left: 115px;
-    background-color:  #1d1b45;
-    border: 2px solid #2ca3ab;
+    background-color:  var(--bluedark);
+    border: 2px solid var(--bluecolor);
     border-radius: 15px;
-    color: white;
+    color: var(---whitecolor);
     padding: 10px ;
     text-align: center;
     cursor: pointer;
@@ -79,13 +95,13 @@ input{
 }
 
 .login-enviar__boton{
-    margin-top: 10px;
-    width: 30%;
-    padding: 3px;
+    margin-top: 16px;
+    width: 100%;
+    padding: 7px;
     font-family: 'Poppins', sans-serif;
-    background-color: #f3610e;
-    color: white;
-    border-color: #2ca3ab;
+    background-color: var(--orangecolor);
+    color: var(---whitecolor);
+    border-color: var(--bluecolor);
     border-radius: 10px;
     cursor: pointer;
 }
