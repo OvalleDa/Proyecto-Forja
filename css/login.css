@@ -59,16 +59,17 @@ input{
 .logo{
     text-align: center;
     background-color: var(--bluesky);
-    padding: 40px 30px;
+    padding: 40px 80px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    cursor: pointer;
 }
 
 .button-back{
     font-family: 'Poppins', sans-serif;
     position: relative;
     top: -10px;
-    left: 115px;
+    left: 160px;
     background-color:  var(--bluedark);
     border: 2px solid var(--bluecolor);
     border-radius: 15px;
@@ -76,6 +77,12 @@ input{
     padding: 10px ;
     text-align: center;
     cursor: pointer;
+}
+
+.button-back:hover{
+  color: rgb(204, 204, 204) !important;
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
 }
 
 .login-form{
@@ -97,11 +104,17 @@ input{
 .login-enviar__boton{
     margin-top: 16px;
     width: 100%;
-    padding: 7px;
+    padding: 10px;
     font-family: 'Poppins', sans-serif;
     background-color: var(--orangecolor);
     color: var(---whitecolor);
     border-color: var(--bluecolor);
     border-radius: 10px;
     cursor: pointer;
+}
+
+.login-enviar__boton:hover{
+    color: rgb(204, 204, 204) !important;
+    box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
 }

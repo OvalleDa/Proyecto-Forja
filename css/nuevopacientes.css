@@ -2,20 +2,23 @@
 
 
 :root{
-  --red-color:#A40101;
-  --blue-color:#2CA3AB;
-  --grey-color:#C4C4C4;
-  --orange-color:#F3610E;
-  --darkblue-color:#1D1B45;
-  --lightblue-color:#a8dde0;
-  --dark-color:#191919;
+    ---whitecolor: #fff;
+    --winecolor: #a40101;
+    --graycolor: #c4c4c4;
+    --bluecolor:#2ca3ab;
+    --bluedark: #1d1b45;
+    --bluesky: #A8DDE0;
+    --orangecolor: #f3610e;
+    --black: #000;
+    --graydark: #4444;
+    --darkcolor: #191919;
 }
 
 body{
   font-family: 'Poppins', sans-serif;
 }
 .contenedor1{
-  background-color: var(--dark-color);
+  background-color: var(--darkcolor);
   display: flex;
   padding: 30px  5px;
   justify-content: space-between;
@@ -32,18 +35,18 @@ body{
   margin: 5px;
   border-radius: 50%;
   font-size:30px;
-  border: 2px solid var(--blue-color);
-  color: var(--dark-color);
+  border: 2px solid var(--bluecolor);
+  color: var(--darkcolor);
 
 }
 
 .franja img{
   width: 100%;
-  border-bottom: 6px solid var(--blue-color);
+  border-bottom: 6px solid var(--bluecolor);
 }
 
 #title{
-  background-color: var(--darkblue-color);
+  background-color: var(--bluedark);
   text-align: center;
   border-radius: 4px;
   color:white;
@@ -53,7 +56,7 @@ body{
 }
 
 #formulario{
-border: 1px solid var(--darkblue-color);
+border: 1px solid var(--bluedark);
 margin: 1px 1px 20px;
 display: flex;
 flex-direction: column;
@@ -63,10 +66,10 @@ justify-content: center;
 #tabla{
   display: flex;
   justify-content: center;
-  background-color: var(--grey-color);
+  background-color: var(--graycolor);
   margin: 25px 25px 5px 25px;
   border-radius: 10px;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--bluedark);
   padding: 15px;
 }
 
@@ -75,9 +78,9 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: var(--blue-color);
+  background-color: var(--bluecolor);
   width: 99%;
-  border: 1px solid var(--darkblue-color);
+  border: 1px solid var(--bluedark);
   border-radius: 4px;
   height: 30px;
   margin: auto;  
@@ -108,7 +111,7 @@ justify-content: center;
 .dates input{
   width: 300px;
   height: 30px;
-  border: 1px solid #2ca3abd5;
+  border: 1px solid var(--bluecolor);
   margin: 10px 10px 10px 20px;
   padding: 0 10px;
   color: gray;
@@ -125,7 +128,7 @@ justify-content: center;
 .dates3 input{
   width: 686px;
   height: 30px;
-  border: 1px solid #2ca3abd5;
+  border: 1px solid var(--bluecolor);
   margin: 10px 20px ;
   padding: 0 10px;
   color: gray;
@@ -134,7 +137,7 @@ justify-content: center;
 .dates3 select{
   width: 708px;
   height: 30px;
-  border: 1px solid #2ca3abd5;
+  border: 1px solid var(--bluecolor);
   margin: 10px 18px ;
   color: gray;
   padding: 0 8px;
@@ -150,7 +153,7 @@ justify-content: center;
 .info input{
   width: 25%;
   height: 30px;
-  border: 1px solid var(--blue2-color);
+  border: 1px solid var(--bluecolor);
   margin: 10px 10px;
   padding: 0 10px;
   color: gray;
@@ -159,7 +162,7 @@ justify-content: center;
 .info select{
   width:33%;
   height: 30px;
-  border: 1px solid var(--blue2-color);
+  border: 1px solid var(--bluecolor);
   margin: 10px 15px 10px 20px;
   color: gray;
 }
@@ -183,7 +186,7 @@ justify-content: center;
 
 #formulario button{
   margin: 10px auto 60px ;
-  background-color: var(--orange-color);
+  background-color: var(--orangecolor);
   width: 8%;
   color: white;
   border: none;
@@ -194,12 +197,21 @@ justify-content: center;
   cursor: pointer;
 }
 
+.btn-guardar:hover{
+  box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+  outline-color: rgba(49, 138, 172, 0);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #fff;
+}
+
+
+
 #footer{
   display: flex;
   width: 100%;
   height: 60px;
-  background-color: var(--dark-color);
-  color: var(--white-color);
+  background-color: var(--darkcolor);
+  color: var(---whitecolor);
   align-items:flex-start;
   justify-content: center;
   font-size: 14px;

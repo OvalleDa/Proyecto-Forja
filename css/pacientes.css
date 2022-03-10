@@ -18,21 +18,21 @@
 body{
     font-family: 'Poppins', sans-serif;
   }
-  .encabezado{
+
+.encabezado{
     background-color: var(--dark-color);
     display: flex;
     padding: 30px  5px;
     justify-content: space-between;
-  }
+}
   
-  .encabezado img{
+.encabezado img{
     margin: auto;
-  }
+}
   
-  #btnform{
-    display: flex;
-  
-  }
+#btnform{
+    display: flex;  
+}
   
   
   .btnformuno{
