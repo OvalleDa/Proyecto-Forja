@@ -17,12 +17,26 @@
 body{
   font-family: 'Poppins', sans-serif;
 }
+
+body input:hover{
+  color: rgb(204, 204, 204) !important;
+  box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+}
+
+body select:hover{
+  color: rgb(204, 204, 204) !important;
+  box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+}
+
 .contenedor1{
   background-color: var(--darkcolor);
   display: flex;
   padding: 30px  5px;
   justify-content: space-between;
 }
+
 
 .encabezado img{
   margin: auto;
@@ -38,6 +52,12 @@ body{
   border: 2px solid var(--bluecolor);
   color: var(--darkcolor);
 
+}
+
+.button1:hover{
+  color: rgb(204, 204, 204) !important;
+  box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
 }
 
 .franja img{

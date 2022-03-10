@@ -103,6 +103,8 @@ body{
     justify-content: end;
 }
 
+
+
 .button-user {
     display: flex;
     align-items: center;
@@ -111,6 +113,13 @@ body{
     background-color: var(--graycolor);
     border-radius: 19px;
     margin: 5px 6px 0px 0px;
+    font-size: 18px;
+}
+
+.button-user:hover{
+    color: var(--orangecolor) !important;
+    box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
 }
 
 .button-user a {
@@ -120,19 +129,26 @@ body{
     justify-content: center;
     align-items: center;
     color: var(--graydark);
-    border: 5px solid var(--orangecolor);
+    border: 3px solid var(--orangecolor);
     background-color: var(---whitecolor);
     cursor: hand;
     margin: 10px 10px 10px 10px;
 }
 
-.button-user h4 {
+.button-user a:hover{
+    color: rgb(204, 204, 204) !important;
+    box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+
+.button-user p {
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
     margin: 0px 15px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 /*titulo Bienvenidos*/
@@ -141,8 +157,10 @@ body{
     text-align: center;
     font-family: 'Poppins',sans-serif;
     font-weight: 600;
+    font-size: 40px;
     margin: 50px 0px 70px 0px;
 }
+
 
 
 .search {
@@ -156,21 +174,20 @@ body{
     justify-content: center;
     align-items: center;
     padding-bottom: 6px;
-
     margin-bottom: 20px;
-    /*border: #df6704 solid 10px;*/
 }
 
 .digite-input {
     width: 300px;
     margin-right: 10px;
     padding-bottom: 5px;
-    border: 0;
+    border: none;
     border-bottom: 2px solid var(--bluedark);
 }
 
 ::placeholder {
     font-family: 'Poppins',sans-serif;
+    font-size: 15px;
 }
 
 .buttons-input a {
@@ -180,6 +197,12 @@ body{
     padding: 4px 10px 4px 10px;
     border-radius: 9px;
     margin-right: 4px;
+}
+
+.buttons-input a:hover{
+    color: rgb(204, 204, 204) !important;
+    box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
 }
 
 .footer {
