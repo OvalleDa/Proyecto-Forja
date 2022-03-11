@@ -48,7 +48,7 @@ body{
 .btnformuno:hover{
     color: rgb(204, 204, 204) !important;
     box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
-    transition: all 0.2s ease;
+    transition: all 0.2s ease; 
 
 }
   
