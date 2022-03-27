@@ -14,227 +14,165 @@
     --darkcolor: #191919;
 }
 
-body{
+*{
   font-family: 'Poppins', sans-serif;
 }
 
-body input:hover{
-  color: rgb(204, 204, 204) !important;
-  box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
-  transition: all 0.2s ease;
+.container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 
-body select:hover{
-  color: rgb(204, 204, 204) !important;
-  box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
-  transition: all 0.2s ease;
-}
-
-.contenedor1{
+header{
+  grid-column: 1/3;
   background-color: var(--darkcolor);
-  display: flex;
-  padding: 30px  5px;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
 }
 
-
-.encabezado img{
-  margin: auto;
+header img{
+  margin-top: 20px;
+  max-width: 70%;
 }
 
+.buttons-header{
+  grid-column: 3/3;
+  margin: 20px;
+}
 
-.button1{
+.btnformuno{
   width:60px;
   height:60px;
   margin: 5px;
   border-radius: 50%;
   font-size:30px;
-  border: 2px solid var(--bluecolor);
-  color: var(--darkcolor);
-
-}
-
-.button1:hover{
-  color: rgb(204, 204, 204) !important;
-  box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
-  transition: all 0.2s ease;
-}
-
-.franja img{
-  width: 100%;
-  border-bottom: 6px solid var(--bluecolor);
-}
-
-#title{
-  background-color: var(--bluedark);
-  text-align: center;
-  border-radius: 4px;
-  color:white;
-  font-weight: 100;
-  padding: 5px;
-  font-size: 22px;
-}
-
-#formulario{
-border: 1px solid var(--bluedark);
-margin: 1px 1px 20px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-
-#tabla{
-  display: flex;
-  justify-content: center;
-  background-color: var(--graycolor);
-  margin: 25px 25px 5px 25px;
-  border-radius: 10px;
-  border: 1px solid var(--bluedark);
-  padding: 15px;
-}
-
-.dates2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  background-color: var(--bluecolor);
-  width: 99%;
-  border: 1px solid var(--bluedark);
-  border-radius: 4px;
-  height: 30px;
-  margin: auto;  
-}
-
-.dates2 img {
-  width: 20px;
-  height: 20px;
-} 
-.dates2 {
-    font-size: 16px;
-    font-weight: 100;
-
-}
-
-.dates2 {
-  font-size: 16px;
-  font-weight: 100;
-
-}
-
-.dates2 {
-  font-size: 16px;
-  font-weight: 100;
-
-}
-  
-.dates input{
-  width: 300px;
-  height: 30px;
-  border: 1px solid var(--bluecolor);
-  margin: 10px 10px 10px 20px;
-  padding: 0 10px;
-  color: gray;
-
-}
-
-.dates3{
-  width: 100%;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: center;
-}
-
-.dates3 input{
-  width: 686px;
-  height: 30px;
-  border: 1px solid var(--bluecolor);
-  margin: 10px 20px ;
-  padding: 0 10px;
-  color: gray;
-}
-
-.dates3 select{
-  width: 708px;
-  height: 30px;
-  border: 1px solid var(--bluecolor);
-  margin: 10px 18px ;
-  color: gray;
-  padding: 0 8px;
-}
-
-.dates3{
-  width: 100%;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: space-between;
-}
-
-.info input{
-  width: 25%;
-  height: 30px;
-  border: 1px solid var(--bluecolor);
-  margin: 10px 10px;
-  padding: 0 10px;
-  color: gray;
-}
-
-.info select{
-  width:33%;
-  height: 30px;
-  border: 1px solid var(--bluecolor);
-  margin: 10px 15px 10px 20px;
-  color: gray;
-}
-
-.info2{
-  font-size: 16px;
-  color: gray;
-  display: flex;
-  flex-direction: column;
-  margin: 0 20px;  
-}
-
-.oinfoadio{
-  width: 10%;
-  display:flex ;
-  align-items: center;
-  justify-content: space-around;
-  margin:auto ;
-  padding: 10px;
-}
-
-#formulario button{
-  margin: 10px auto 60px ;
-  background-color: var(--orangecolor);
-  width: 8%;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  padding: 10px;
-  font-size: 14px;
-  font-weight: 100;
+  border: 2px solid var(--blue-color);
+  color: var(--dark-color);
   cursor: pointer;
 }
 
-.btn-guardar:hover{
-  box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
-  outline-color: rgba(49, 138, 172, 0);
-  outline-offset: 80px;
-  text-shadow: 1px 1px 6px #fff;
+.banner-img{
+  grid-column: 1/3;
+  background-color: #2ca3ab;
 }
 
-
-
-#footer{
-  display: flex;
+.banner-img img{
   width: 100%;
-  height: 60px;
-  background-color: var(--darkcolor);
-  color: var(---whitecolor);
-  align-items:flex-start;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: 100;
 }
 
+.title{
+  margin-top: 20px;
+  grid-column: 1/3;
+  background-color: #1d1b45;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.container2{
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  border: 2px solid var(--graycolor);
+  grid-column: 1/3;
+  margin-top: 20px;
+  background-color: var(---whitecolor);
+}
+
+.form{
+  grid-column: 1/3;
+  width: 90%;
+  gap: 10px;
+  border-radius: 20px;
+  margin: 1.6em auto;
+  border: 2px solid black;
+  background-color: var(--graycolor);
+}
+
+.input{
+  margin: 20px;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #2ca3abd5;
+  padding: 0 10px;
+  color: gray;
+}
+
+.datospaciente{
+  display: grid;
+  grid-template-columns: repeat(2,fr);
+  grid-column: 1/3;
+  margin: 10px;
+  background-color: var(--bluecolor);
+  border: 1px solid black;
+  color: var(---whitecolor);
+}
+
+.datospaciente h3{
+  grid-column: 2/3;
+}
+
+.datospaciente img{
+  grid-column: 1;
+  width: 30px;
+  margin-top: 10px;
+}
+
+.datos {  
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 10px;
+}
+
+.datos input{
+  margin: 20px;
+  height: 30px;
+}
+
+.datos select{
+  height: 30px;  
+  margin: 20px;
+}
+
+.datosp {  
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 10px;
+}
+
+.datosp input{
+  margin: 20px;
+  height: 30px;
+}
+
+.datosp select{
+  height: 30px;
+  margin: 20px;
+}
+
+.pr{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 10px;
+}
+
+.pr input{
+  margin: 20px;
+  height: 30px;
+}
+
+.pr select{
+  height: 30px;
+  margin: 20px;
+}
+
+
+.radio label{
+  margin: 20px;
+}
+
+.radio .opradio{
+  text-align: center;
+  margin: 20px;
+}
