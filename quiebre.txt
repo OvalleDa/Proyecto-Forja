@@ -1,0 +1,19 @@
+tabletas.
+@media screen and (min-width: 768px){
+
+
+}
+
+medias
+
+@media screen and (min-width: 1024px){
+
+    
+}
+
+macro
+
+@media screen and (min-width: 1200px){
+
+    
+}

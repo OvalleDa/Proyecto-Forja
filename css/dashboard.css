@@ -216,3 +216,18 @@ body{
     width: 80%;
 }
 
+@media screen and (min-width: 412px){
+    #sidebar {
+        float: left;
+        width: 20%;
+        background-color: var(--bluedark);
+        height: 150%;
+        position: absolute;
+    }
+    
+    .logo-side img {
+        max-width: 100%;
+        /* width: 00px; */
+    }
+
+}
